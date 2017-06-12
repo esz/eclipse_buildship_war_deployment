@@ -15,7 +15,7 @@ targetCompatibility = 1.8
 
 dependencies {
 	implementation 'mywebapp:mylibrary:0.0.1-SNAPSHOT'
-	compileOnly 'javax.enterprise:cdi-api:2.0'
+	compileOnly 'javax.servlet:javax.servlet-api:3.0.1'
 }
 
 eclipse {
