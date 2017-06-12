@@ -1,0 +1,27 @@
+repositories {
+	mavenLocal()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+group = 'mywebapp'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	implementation 'mywebapp:mylibrary:0.0.1-SNAPSHOT'
+	compileOnly 'javax.enterprise:cdi-api:2.0'
+}
+
+eclipse {
+    wtp {
+        facet {         
+          facet name: 'jst.web', version: '3.0'
+        }
+    }
+}

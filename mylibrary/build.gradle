@@ -1,0 +1,18 @@
+repositories {
+	mavenLocal()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+apply plugin: 'maven'
+
+group = 'mywebapp'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compileOnly 'javax.enterprise:cdi-api:2.0'
+}
